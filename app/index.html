@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="lib/jquery-3.6.0.min.js"></script>
+  <script src="lib/bootstrap/bootstrap.bundle.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills float-right">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#!/home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!/users">Usuarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!/albums">Álbumes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!/posts">Publicaciones</a>
+                </li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">i4Digital</h3>
+    </div>
+    
+    <div class="jumbotron">
+        <div ng-view></div>
+    </div>
+
+  </div>
+
+  <!-- <div ng-view></div> -->
+
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="views/users/users.js"></script>
+  <script src="views/home/app.home.js"></script>
+  <script src="views/albums/albums.js"></script>
+  <script src="views/posts/posts.js"></script>
+  <script src="core/version/version.js"></script>
+  <script src="core/version/version-directive.js"></script>
+  <script src="core/version/interpolate-filter.js"></script>
+</body>
+</html>
